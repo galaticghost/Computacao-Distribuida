@@ -40,7 +40,7 @@ async def lifespan(app:FastAPI):
     )
 
     queue = await channel.declare_queue(
-        "fila.temperatura",
+        "fila_temperatura",
         passive=True
     )
 
